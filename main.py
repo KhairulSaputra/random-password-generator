@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#this is my second project
 
+#import module
 import os, platform
 import random, string
 
@@ -32,10 +32,10 @@ def main():
     use_digits = input("Gunakan angka? (ya/tidak): ").lower() == 'ya'
     use_symbols = input("Gunakan simbol? (ya/tidak): ").lower() == 'ya'
 
-    kata_sandi = generate_password(lenWord, use_uppercase, use_digits, use_symbols)
+    password = generate_password(lenWord, use_uppercase, use_digits, use_symbols)
 
     print("\nKata Sandi yang Dibuat:")
-    print(kata_sandi)
+    print(password)
 
 if __name__ == "__main__":
     main()
